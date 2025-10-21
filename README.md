@@ -1,18 +1,23 @@
-# Salesforce DX Project: Next Steps
+# Qualificador de Contas Salesforce
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Este projeto implementa uma lógica de qualificação automática de contas na plataforma Salesforce, atribuindo um score com base em dados como receita anual, número de funcionários e setor de atuação. O objetivo é facilitar a priorização de clientes e oportunidades comerciais por meio de uma métrica objetiva.
 
-## How Do You Plan to Deploy Your Changes?
+## Funcionalidades
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+- Cálculo automático de score no momento da inserção de contas
+- Lógica síncrona para até 200 registros
+- Atualização assíncrona via job agendado para contas sem score
+- Trigger Apex integrada com serviço de cálculo
+- Estrutura modular com classes reutilizáveis
 
-## Configure Your Salesforce DX Project
+## Ferramentas
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+  - Class apex
+  - Trigger com class Handler;
+  - Ferramentas assíncronas (Batchable e Schedulable);
 
-## Read All About It
+## ⚙️ Instalação
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/qualificador-contas.git
